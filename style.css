@@ -15,4 +15,33 @@ body {
 
 .sidebar {
     grid-row: 1 / -1;
+    padding: 1.2rem;
+}
+
+.sidebar>h1 {
+    font-size: 2rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.site-nav {
+    margin-top: 3rem;
+}
+
+.main-nav,
+.setting-nav {
+    font-size: 1.3rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.setting-nav{
+    margin-top: 4rem;
 }
