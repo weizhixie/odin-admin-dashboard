@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 0.2fr 1fr;
+    grid-template-rows: 10rem 1fr;
 }
 
 .sidebar {
@@ -44,4 +44,50 @@ body {
 
 .setting-nav{
     margin-top: 4rem;
+}
+
+.header {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.8rem 2rem;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 3em 1fr;
+    gap: 1rem;
+}
+
+#search {
+    border-radius: 15px;
+    height: 2rem;
+}
+
+.user-setting {
+    display: grid;
+    grid-template-columns: repeat(2, 3em) 7em;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.user-info {
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 5em 1fr;
+    align-items: center;
+}
+
+.profile-btn {
+    display: grid;
+    grid-template-columns: repeat(3, 6em);
+    align-items: center;
+    justify-content: end;
+    gap: 1.5em;
+}
+
+.profile-btn>button {
+    height: 2.2rem;
+    border-radius: 18px;
 }
