@@ -27,8 +27,16 @@ body {
 }
 
 .sidebar>h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--font-clr);
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.sidebar>h1>svg{
+    width: 3rem;
+    fill: var(--secondary-bg-clr);
 }
 
 .sidebar a {
@@ -55,6 +63,25 @@ body {
     margin-top: 4rem;
 }
 
+.nav-link {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 1rem;
+}
+
+.nav-link:hover {
+    background-color: var(--secondary-bg-clr);
+    color: var(--primary-bg-clr);
+}
+
+.nav-link:hover svg {
+    fill: var(--primary-bg-clr);
+}
+
+.nav-link>svg {
+    fill: var(--secondary-bg-clr);
+}
+
 /******************* Header *****************/
 .header {
     padding: 1rem 2rem;
@@ -69,11 +96,13 @@ body {
     gap: 1rem;
 }
 
-.search-icon, .bell-icon {
+.search-icon,
+.bell-icon {
     width: 2em;
 }
 
-.search-icon:hover, .bell-icon:hover {
+.search-icon:hover,
+.bell-icon:hover {
     fill: var(--primary-bg-clr);
     cursor: pointer;
     transform: scale(1.2);
@@ -96,7 +125,7 @@ body {
     gap: 1rem;
 }
 
-.user-setting>.avatar{
+.user-setting>.avatar {
     width: 2.5rem;
     height: 2.5rem;
 }
@@ -109,7 +138,7 @@ body {
     gap: 1rem;
 }
 
-.user-info>.avatar{
+.user-info>.avatar {
     width: 4.5rem;
     height: 4.5rem;
 }
@@ -181,11 +210,11 @@ body {
 
 .announcement p {
     font-size: 0.8rem;
-    display: -webkit-box; 
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 3; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .announcement .paragraph-divider {
@@ -214,7 +243,7 @@ body {
     font-size: 0.9rem;
 }
 
-.trending-user>.avatar{
+.trending-user>.avatar {
     width: 3rem;
     height: 3rem;
 }
