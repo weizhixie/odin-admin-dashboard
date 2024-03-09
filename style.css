@@ -42,7 +42,7 @@ body {
     gap: 1rem;
 }
 
-.setting-nav{
+.setting-nav {
     margin-top: 4rem;
 }
 
@@ -90,4 +90,74 @@ body {
 .profile-btn>button {
     height: 2.2rem;
     border-radius: 18px;
+}
+
+.main-content {
+    background-color: #ccc;
+    padding: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 16rem;
+    grid-template-rows: 24rem 1fr;
+}
+
+.project-container {
+    grid-row: 1 / -1;
+}
+
+.project {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+}
+
+.project .card {
+    background: linear-gradient(90deg, orange 0 3%, white 3% 100%);
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.project .card-icon {
+    text-align: right;
+}
+
+.announcement {
+    background-color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+.announcement p {
+    font-size: 0.8rem;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+.announcement .paragraph-divider {
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.trending {
+    background-color: white;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    display: grid;
+    gap: 1.8rem;
+}
+
+.trending .trending-user {
+    display: grid;
+    grid-template-columns: 3em 1fr;
+}
+
+.trending p {
+    font-size: 0.9rem;
 }
