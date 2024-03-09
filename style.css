@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+:root {
+    --primary-bg-clr: #0284c7;
+    --secondary-bg-clr: #e0f2fe;
+    --font-clr: #ffffff;
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -16,15 +22,17 @@ body {
 .sidebar {
     grid-row: 1 / -1;
     padding: 1.2rem;
+    background-color: var(--primary-bg-clr);
 }
 
 .sidebar>h1 {
     font-size: 2rem;
+    color: var(--font-clr);
 }
 
 .sidebar a {
     text-decoration: none;
-    color: black;
+    color: var(--font-clr);
 }
 
 .sidebar ul {
@@ -62,6 +70,8 @@ body {
 #search {
     border-radius: 15px;
     height: 2rem;
+    background-color: var(--secondary-bg-clr);
+    border: 1px solid var(--primary-bg-clr);
 }
 
 .user-setting {
@@ -90,10 +100,14 @@ body {
 .profile-btn>button {
     height: 2.2rem;
     border-radius: 18px;
+    background-color: var(--primary-bg-clr);
+    color: var(--font-clr);
+    border: none;
+    font-size: 1rem;
 }
 
 .main-content {
-    background-color: #ccc;
+    background-color: var(--secondary-bg-clr);
     padding: 1rem;
     gap: 1rem;
     display: grid;
@@ -113,7 +127,7 @@ body {
 }
 
 .project .card {
-    background: linear-gradient(90deg, orange 0 3%, white 3% 100%);
+    background: linear-gradient(90deg, #c7d2fe 0 3%, white 3% 100%);
     padding: 2rem;
     border-radius: 12px;
 }
