@@ -19,6 +19,7 @@ body {
     grid-template-rows: 10rem 1fr;
 }
 
+/******************* Sidebar *****************/
 .sidebar {
     grid-row: 1 / -1;
     padding: 1.2rem;
@@ -54,6 +55,7 @@ body {
     margin-top: 4rem;
 }
 
+/******************* Header *****************/
 .header {
     padding: 1rem 2rem;
     display: grid;
@@ -63,8 +65,18 @@ body {
 
 .search-bar {
     display: grid;
-    grid-template-columns: 3em 1fr;
+    grid-template-columns: 2rem 1fr;
     gap: 1rem;
+}
+
+.search-icon, .bell-icon {
+    width: 2em;
+}
+
+.search-icon:hover, .bell-icon:hover {
+    fill: var(--primary-bg-clr);
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 #search {
@@ -72,6 +84,8 @@ body {
     height: 2rem;
     background-color: var(--secondary-bg-clr);
     border: 1px solid var(--primary-bg-clr);
+    padding: 0 1rem;
+    font-size: 1.2rem;
 }
 
 .user-setting {
@@ -117,6 +131,7 @@ body {
     font-size: 1rem;
 }
 
+/******************* Main content *****************/
 .main-content {
     background-color: var(--secondary-bg-clr);
     padding: 1rem;
