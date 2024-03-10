@@ -17,6 +17,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 10rem 1fr;
+    font-family: "Roboto", sans-serif;
 }
 
 /******************* Sidebar *****************/
@@ -154,7 +155,7 @@ body {
 }
 
 .search-icon:hover,
-.bell-icon:hover ,
+.bell-icon:hover,
 .profile-btn>button:hover,
 .user-setting>.avatar:hover,
 .user-info>.avatar:hover {
@@ -270,7 +271,7 @@ body {
 .announcement p:hover,
 .trending .avatar:hover,
 .trending h5:hover,
-.trending p:hover{
+.trending p:hover {
     cursor: pointer;
 }
 
